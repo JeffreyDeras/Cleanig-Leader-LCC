@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+:root {
+    --color-white: #ffff;
+    --color-black: black;
+    --font-family-primary: 'Oswald' sans-serif;
+    --primary-color-blue: #0e65b2;
+    --primary-color-blue2: #458EED;
+    --primary-color-blue3: #9AC9FC;
+
+
+    --secondary-color-orange: #f25d44;
+    --secondary-color-orange2: #f48462;
+    --secondary-color-orange3: #f9a498;
+
+    --tertiary-color-green: #0cad77;
+    --tertiary-color-green2: #66cc99;
+    --tertiary-color-green3: #A8E5C5;
+}
+
+* {
+    font-family: var(--font-family-primary);
+
+}
+
+
+body {
+    background: #ffffff;
+    font-weight: 300;
+}
+
+
+a {
+    color: var(--primary-color-blue);
+    transition: .3s;
+
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #333333;
+    outline: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    background-color: #fff2fe;
+}
+
+section{
+    padding: 5rem 10%;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    color: var(--primary-color-blue);
+}
+
+.blog .box-container{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;    
+}
+
+.blog .box-container .box:hover .image img{
+    transition: ease-in-out 2s;
+    transform: scale(1.2);
+}
+
+.blog .box-container .box.shadow{
+    box-shadow: 0px 18px 39.1px 6.9px rgba(224, 241, 255, 0.34) !important;
+}
+
+
+.blog .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.blog .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; 
+}
+
+.blog .box-container .box .image h3{
+    background-color: #fff;
+    color: var(--primary-color-blue);
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    padding: .5rem 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+
+.blog .box-container .box .image h3 i{
+    color: var(--secondary-color-orange);
+}
+
+.blog .box-container .box .content{
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.blog .box-container .box .content h3{
+    font-size: 2rem;
+    color: #0e65b2;
+}
+
+.blog .box-container .box .content p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+    font-weight: 500;
+    color: grey;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background: var(--secondary-color-orange2);
+    color: white;
+    font-weight:600;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.btn:hover{
+    background: var(--primary-color-blue3);
+    color: black;
+}
+
+/*slider*/
+
